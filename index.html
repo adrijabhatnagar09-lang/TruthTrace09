@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthTrace — Don't just believe it. Trace it.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>TruthTrace</h1>
+        <p class="tagline">"Don’t just believe it. Trace it."</p>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Input Section -->
+        <section class="input-card">
+            <h2>Verify a Claim</h2>
+            <p>Paste a news headline, message, or claim below to analyze its reliability.</p>
+            
+            <textarea id="claimInput" placeholder="e.g., BREAKING: NASA confirms 3 days of complete darkness next month!"></textarea>
+            
+            <button id="analyzeBtn" onclick="traceClaim()">Trace Claim 🔍</button>
+        </section>
+
+        <!-- Output / Results Section -->
+        <section id="resultCard" class="result-card hidden">
+            <div id="statusBadge" class="status-badge"></div>
+            
+            <h3 id="resultTitle">Analysis Result</h3>
+            <p id="resultSummary"></p>
+
+            <!-- Trace the Evidence Feature -->
+            <div class="evidence-section">
+                <h4>🔎 Trace the Evidence</h4>
+                <ul id="evidenceList"></ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TruthTrace — Class 8 Half-Yearly STEM Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
